@@ -13,7 +13,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.modversion=$(CUSTOM_VERSION)
 
 # Updater
-ifeq ($(IS_OFFICIAL),true)
+ifeq ($(CUSTOM_BUILD_TYPE),ForkEdition)
     ADDITIONAL_SYSTEM_PROPERTIES  += \
         net.pixelos.build_type=ci \
         net.pixelos.version=$(CUSTOM_VERSION_PROP)
